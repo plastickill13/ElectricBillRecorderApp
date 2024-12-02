@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/blue">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="182dp"
+        android:layout_height="183dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:text="Bill Records" />
+
+    <EditText
+        android:id="@+id/searchInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Search by Bill ID"
+        android:padding="10dp" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:divider="@color/black"
+                android:showDividers="middle">
+
+                <!-- Header Row -->
+                <TableRow android:background="#CCCCCC">
+                    <TextView
+                        android:text="Bill ID"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="Customer ID"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="Consumption"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="Total Bill"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="Bill Date"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="Admin ID"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>

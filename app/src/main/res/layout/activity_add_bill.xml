@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/blue">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="395dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Bill"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/etCustomerId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Customer ID"
+        android:inputType="number"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/etConsumption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Consumption (kWh)"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="15dp" />
+
+    <!-- Add Bill Button -->
+    <Button
+        android:id="@+id/btnAddBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Bill"
+        android:backgroundTint="#FB7019"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp" />
+
+</LinearLayout>

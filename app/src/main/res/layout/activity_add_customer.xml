@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/blue">
+
+    <!-- App Title -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="374dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Customer"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Customer Name Input -->
+    <EditText
+        android:id="@+id/etCustomerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Customer Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="15dp" />
+
+    <!-- Customer Address Input -->
+    <EditText
+        android:id="@+id/etCustomerAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Customer Address"
+        android:inputType="textPostalAddress"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="15dp" />
+
+    <!-- Customer Contact Input -->
+    <EditText
+        android:id="@+id/etCustomerContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Customer Contact"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="15dp" />
+
+    <!-- Add Customer Button -->
+    <Button
+        android:id="@+id/btnAddCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Customer"
+        android:backgroundTint="#FB7019"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp" />
+
+</LinearLayout>
